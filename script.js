@@ -33,5 +33,5 @@ if (isIE()) {
     alert("Internet Explorer");
 }
 else {
-    alert("Not Internet Explorer");
+    
 }
