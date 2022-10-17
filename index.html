@@ -1,0 +1,41 @@
+   <noindex>
+<!doctype html>
+<html>
+    <head >
+      <meta charset="utf-8">  
+    <link rel="stylesheet" href="css/style.css">
+    <title>Страница авторизации</title>
+	<script type="text/javascript" src="script.js"></script> 
+	
+    </head>
+    <body onload="clockTimer();" onload="isIE();"> 
+	
+      
+    <div class="form_auth_block">
+  <div class="form_auth_block_content">
+    <p class="form_auth_block_head_text">Авторизация</p> <!--Выводит текст Авторизация на форме -->
+    <form class="form_auth_style" action="#" method="post">
+      <label>email</label> <!--Выводит текст email на форме -->
+      <input type="email" name="auth_email" placeholder="Введите Ваш email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"  title="*****@(mail.ru,gmail.com, yandex.ru и т.д.)" required > <!--Задаю параметры к полю email -->
+      <label>Пароль</label> <!--Выводит текст Пароль на форме -->
+      <input type="password" name="auth_pass" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Пароль должен содержать цифры, спец.символы, буквы разного регистра латинского алфавита и быть не менее 6 символов " placeholder="Введите пароль" required >
+			<span class="input_box"> <!--Задаю параметры к полю пароль -->
+			 
+   <span </span>
+   <label>Номер телефона</label>
+   <input type="text" maxlength="12" name="phone"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"   placeholder="Введите Ваш номер телефона в формате +7 *** *** ** **" value="+7" required >
+</span>
+      <button class="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+    </form>
+  </div>
+</div>
+ <div class="clockpage">
+    
+      <span id="clock"></span>
+      <span id="dayOfWeek"></span>
+      
+    </div>
+       
+    </body>
+</html>
